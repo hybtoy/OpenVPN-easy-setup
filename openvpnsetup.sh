@@ -283,10 +283,6 @@ else
     echo "</tls-crypt>" >> /etc/openvpn/server.conf
 fi
 
-echo "<dh>"  >> /etc/openvpn/server.conf
-cat $KEY_DIR/dh.pem >> /etc/openvpn/server.conf
-echo "</dh>" >> /etc/openvpn/server.conf
-
 #create iptables file
 echo "*filter
 :INPUT ACCEPT [0:0]
